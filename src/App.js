@@ -5,6 +5,7 @@ import './App.css';
 
 import { FunctionComp ,FunctionComp2 }   from './Components/FunctionalComp';   
 import { ClassComp ,ClassComp2 } from './Components/ClassComp';
+import Click from './Components/Click';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <h1>Class Components</h1>
       <ClassComp />
       <ClassComp2 />
+      <Click />
     </div>
   );
 }
