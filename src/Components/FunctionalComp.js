@@ -1,7 +1,9 @@
 import React from "react";
 
-function FunctionComp(){
+export function FunctionComp(){
     return <p>Function Components Display</p>
 }
 
-export default FunctionComp; 
+export function FunctionComp2(){
+    return <p>Function Components Display - 2</p>
+}

@@ -1,9 +1,14 @@
 import React from "react";
 
-class ClassComp extends React.Component{
+export class ClassComp extends React.Component{
     render(){
         return <p>Class Components Display</p>
     }
 }
 
-export default ClassComp;
+export class ClassComp2 extends React.Component{
+    render(){
+        return <p>Class Components Display - 2</p>
+    }
+}
+
