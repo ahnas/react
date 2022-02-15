@@ -4,6 +4,7 @@ import React from 'react';
 // import './App.css';
 
 import FunctionComp  from './Components/FunctionalComp';
+import ClassComp from './Components/ClassComp';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <h1>Head 1</h1>
       <h1>Head 2</h1>
       <FunctionComp></FunctionComp>
+      <ClassComp></ClassComp>
     </div>
   );
 }
