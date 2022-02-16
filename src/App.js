@@ -6,8 +6,9 @@ import './App.css';
 import { FunctionComp ,FunctionComp2 }   from './Components/FunctionalComp';   
 import { ClassComp ,ClassComp2 } from './Components/ClassComp';
 import Click from './Components/Click';
+import Counter from './Components/Counter';
 
-function App() {
+function App () {
   return (
     <div className='App-header'>
       
@@ -19,6 +20,7 @@ function App() {
       <ClassComp />
       <ClassComp2 />
       <Click />
+      <Counter />
     </div>
   );
 }
