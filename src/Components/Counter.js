@@ -21,7 +21,9 @@ class Counter extends Component {
         const {count} = this.state;
         return (
             <div>
-                <button onMouseEnter={this.CountIncrease}> {this.props.name} press to increase || {count} </button> 
+                
+                <br></br>
+                <button onMouseEnter={this.CountIncrease}> {this.props.name} Hover to increase || {count} </button> 
             </div>
         );
     }

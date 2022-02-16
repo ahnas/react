@@ -7,6 +7,7 @@ import { FunctionComp ,FunctionComp2 }   from './Components/FunctionalComp';
 import { ClassComp ,ClassComp2 } from './Components/ClassComp';
 import Click from './Components/Click';
 import Counter from './Components/Counter';
+import ParentComp from './Components/ParentComp';
 
 function App () {
   return (
@@ -21,6 +22,9 @@ function App () {
       <ClassComp2 />
       <Click />
       <Counter />
+      <br></br>
+      <h4>Pure Component</h4>
+      <ParentComp />
     </div>
   );
 }
