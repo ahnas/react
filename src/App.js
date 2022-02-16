@@ -8,6 +8,7 @@ import { ClassComp ,ClassComp2 } from './Components/ClassComp';
 import Click from './Components/Click';
 import Counter from './Components/Counter';
 import ParentComp from './Components/ParentComp';
+import ClassProps from './Components/ClassProps';
 
 function App () {
   return (
@@ -25,6 +26,15 @@ function App () {
       <br></br>
       <h4>Pure Component</h4>
       <ParentComp />
+      <h3>Class Props</h3>
+
+      <ClassProps name = "test" place="place">
+        <p>child Component</p>
+      </ClassProps>
+
+      <ClassProps name = "test2" place="place2">
+        <button>child Component</button>
+      </ClassProps>
     </div>
   );
 }
