@@ -14,7 +14,8 @@
 }
 
 .App-header {
-  text-align: center;
+  margin-left: 100px;
+  width: 50%;
 }
 
 .App-link {
@@ -28,4 +29,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.StateApp{
+  text-align: center;
 }

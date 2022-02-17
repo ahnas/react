@@ -10,46 +10,54 @@ import Counter from './Components/Counter';
 import ParentComp from './Components/ParentComp';
 import ClassProps from './Components/ClassProps';
 import FunctionProps from './Components/FunctionProps';
+import AppState from './AppState';
 
 function App () {
   return (
-    <div className='App-header'>
-      
-      <h1>Function Components</h1>
-      <FunctionComp />
-      <FunctionComp2 />
+    <div>
+      <div className='App-header'>
+        
+        <h1>Function Components</h1>
+        <FunctionComp />
+        <FunctionComp2 />
 
-      <h1>Class Components</h1>
-      <ClassComp />
-      <ClassComp2 />
-      <Click />
-      <Counter />
-      <br></br>
-      <h4>Pure Component</h4>
-      <ParentComp />
+        <h1>Class Components</h1>
+        <ClassComp />
+        <ClassComp2 />
+        <Click />
+        <Counter />
+        <br></br>
+        <h4>Pure Component</h4>
+        <ParentComp />
 
-      <h3>Class Props</h3>
+        <h3>Class Props</h3>
 
-      <ClassProps name = "test" place="place">
-        <p>child Component</p>
-      </ClassProps>
+        <ClassProps name = "test" place="place">
+          <p>child Component</p>
+        </ClassProps>
 
-      <ClassProps name = "test2" children="children" place="place2">
-        <button>child Componen  </button>
-      </ClassProps>
+        <ClassProps name = "test2" place="place2">
+          <button>child Componen  </button>
+        </ClassProps>
 
-      <h3>Function Props</h3>
-      <FunctionProps name="Test1FUNPROPS">
-      <button>child Component2p</button>
-      </FunctionProps>
+        <h3>Function Props</h3>
+        <FunctionProps name="Test1FUNPROPS">
+        <button>child Component2p</button>
+        </FunctionProps>
 
-      <FunctionProps name="Test1FUNPROPS2">
-      <p>child Component2P</p>
-      </FunctionProps>
+        <FunctionProps name="Test1FUNPROPS2">
+        <p>child Component2P</p>
+        </FunctionProps>
 
-      
+        
 
+      </div>
+
+      <div className='state'>
+        <AppState/>
+      </div>
     </div>
+
   );
 }
 
