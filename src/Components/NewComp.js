@@ -6,7 +6,7 @@ class NewComp extends Component {
         
         this.state = {
             message: "Subscribe to State",
-            sub : "Sub text"
+            sub : "Subcribe PLease"
         };
 
     }
@@ -16,12 +16,18 @@ class NewComp extends Component {
         color :'red'
     }
 
-    
+bTchange = () => {
+    this.setState({
+        message: "Hit bell icon",
+        sub : "Done Subcribed"
+    })
+}
+
     render() {
         return (
             <div className='App'>
                 <h3 style={this.styl}> {this.state.message} </h3> 
-                <button> {this.state.sub}</button>
+                <button onClick={this.bTchange}> {this.state.sub}</button>
             </div>
         );
     }
