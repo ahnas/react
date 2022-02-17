@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import blackBell from './images/blackBell.png';
+import redBell from './images/redBell.png';
 
 class NewComp extends Component {
     constructor(props) {
@@ -6,7 +8,8 @@ class NewComp extends Component {
         
         this.state = {
             message: "Subscribe to State",
-            sub : "Subcribe PLease"
+            sub : "Subcribe PLease",
+            imageURL : blackBell
         };
 
     }
@@ -23,11 +26,22 @@ bTchange = () => {
     })
 }
 
+imgChange = () => {
+    this.setState({
+        message: "Image change Display",
+        imageURL: redBell
+    })
+}
+
+
+
     render() {
         return (
             <div className='App'>
                 <h3 style={this.styl}> {this.state.message} </h3> 
                 <button onClick={this.bTchange}> {this.state.sub}</button>
+                <br/>
+                <img onClick={this.imgChange} src={this.state.imageURL} alt= 'Blackbell'></img>
             </div>
         );
     }
